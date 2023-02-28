@@ -1,20 +1,25 @@
 #include "main.h"
 /**
- * print_most_numbers - prints most except 2 and 4
+ * more_numbers - prints 0 - 14
  *
- * Return: void
+ * Return: void.
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
-	int i;
+	int i, j;
 
-	for (i = 0; i < 10; i++)
+	i = 0;
+	while (i < 10)
 	{
-		if ((i == 2) || (i == 4))
+		j = 0;
+		while (j < 15)
 		{
-			continue;
+			if (j >= 10)
+				_putchar('0' + j / 10);
+			_putchar('0' + j % 10);
+			j++;
 		}
-		_putchar('0' + i);
+		_putchar('\n');
+		i++;
 	}
-	_putchar('\n');
 }
