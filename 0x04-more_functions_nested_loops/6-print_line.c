@@ -1,25 +1,24 @@
 #include "main.h"
 /**
- * more_numbers - prints 0 - 14
+ * print_line - prints a line n chars long
+ * @n: length of line
  *
- * Return: void.
+ * Return: void
  */
-void more_numbers(void)
+void print_line(int n)
 {
-	int i, j;
+	int i;
 
-	i = 0;
-	while (i < 10)
+	if (n <= 0)
 	{
-		j = 0;
-		while (j < 15)
-		{
-			if (j >= 10)
-				_putchar('0' + j / 10);
-			_putchar('0' + j % 10);
-			j++;
-		}
 		_putchar('\n');
-		i++;
+	}
+	else
+	{
+		for (i = 1; i <= n; i++)
+		{
+			_putchar('_');
+		}
+	_putchar('\n');
 	}
 }
