@@ -1,1 +1,1 @@
-C as a low level programming
+C is a low levwl programming
